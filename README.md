@@ -8,6 +8,7 @@
     // 实现 flatten 方法使得
     flatten(givenArr)-->outputArr
 递归实现
+    
     function flatten(arr){
       var res = [];
       for(var i=0;i<arr.length;i++) {
@@ -26,6 +27,7 @@
         },[]);
     }
   ES6拓展运算符
+    
     function flatten(arr){
         while(arr.some(item=>Array.isArray(item)){
             arr = [].concat(...arr);
