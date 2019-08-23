@@ -34,3 +34,6 @@
         }
         return arr;
     }
+
+## 2. react 加载img 出错 使用onError事件处理。
+    <img src={v.CoverUrl} onError={(e) => { e.target.onerror = null;e.target.src=require('../../../public/assets/images/course-center-detail.gif'); }} />
